@@ -5,18 +5,80 @@
         <meta name="desciption" content="">
         <meta name="viewport" content="width=device-width, inital-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
     </head>
     <body>
         <header>
             <h1 class="NamePort">Erion Bajrami</h1>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Exp</a></li>
+                    <li><a href="#SECTION1">About</a></li>
+                    <li><a href="#SECTION2">Exp</a></li>
                 </ul>
             </nav>
-            <a class="cnt" href="#"><button>Contact</button></a>
+            <a class="cnt" href="#SECTION3"><button class="Contact">Contact</button></a>
         </header>
+
+        <h4 class="hobbies">My Hobbies</h4>
+                <div class="image-content">
+                    <div class="image">
+
+                        <img src="images/basketball.jpg" alt="" class="card-image">
+                        <img src="images/book.jpg" alt="" class="card-image">
+                        <img src="images/chess.jpg" alt="" class="card-image">
+                        <img src="images/snowboarding.jpg" alt="" class="card-image">
+                    </div>
+                </div>
+        
+        
+                <div class="AboutSection" a id="SECTION1">
+                    <h4 class="About">About</h4>
+
+
+                    <p class="Paragraph">
+                        Hello there fellow adventurer. My name is Erion Bajrami,<Br> a student and a risk taker with some experience as a QA engineer, mostly freelance with some mentorship of course. <br>
+                        I worked as a Team Director/Leader in the high school program<br> “IT Club” of teaching, directing and creating which is dedicated to further
+                        technological literacy to elderly or youth.<br> Throughout coursework, my team and I had successfully created web page for furniture,
+                        which more of it was learning teamwork and the importance of communication.<br>
+                        Additionally, in coursework I had to continually be creative in my approach to developing the site that would be compelling and effective.<br>
+                        As a result of our efforts, our group got recognized by the municipality of Gjilan and the governor of Gjilan.<br>
+                        I’m excited at the prospect of bringing the skills I developed throughout my experiences.
+                    </p>
+
+                    <p class="update">UPDATE: Our coursework professor deleted our project?</p>
+                </div>
+
+                <div class="Exp" a id="SECTION2">
+                    <h4 class="About">Experiences</h4>
+
+                    <h4 class="H4PARA"> <label id="risktaker">I'm excited to show you my only project :)</label></h4>
+
+                    <button class="MyProject" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')" id="butoni"> My Beloved Project</button>
+
+                </div>
+
+                <h4 class="GetinTouch">Get in touch.</h1>
+                <div class="contactMe" a id="SECTION3">
+                    <form action="https://formspree.io/f/xwkzyekd" method="POST">   
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email Id" required>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <textarea id="message" rows="4" placeholder="Message Me!" name=""></textarea>
+                    <button type="submit">Send</button>
+                    </form>
+                </div>
+
+
+                <footer>
+                    <h3 class="footerthing">Thank you for considering me.</h3>
+                </footer>
+
+                <script>
+                    function butoni(){
+                        document.getElementById('risktaker').innerHTML = "Told you I'm a risk taker.";
+                    }
+                </script>
 
     </body>
 
